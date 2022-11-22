@@ -1,0 +1,32 @@
+$theme-colors: (
+  "primary": #003e51,
+  "primary-light": #ecf1f2,
+  "secondary": #6399ae,
+  "dark": #222,
+  "light": #f8fafb,
+  "success": #1f7909,
+  "warning": #d37909,
+  "danger": #dc3003,
+);
+
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+$link-color: map-get($theme-colors, primary);
+$component-active-bg: map-get($theme-colors, secondary);
+$accordion-button-active-color: #212529;
+
+@import "~bootstrap/scss/bootstrap.scss";
+
+html,
+body {
+  font-family: "Bai Jamjuree", sans-serif !important;
+  overflow-x: hidden;
+  background-color: map-get($theme-colors, light);
+}
+
+.topnav-text {
+  font-size: 2rem;
+  text-align: center;
+}
