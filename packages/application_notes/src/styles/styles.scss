@@ -23,7 +23,7 @@ html,
 body {
   font-family: "Bai Jamjuree", sans-serif !important;
   overflow-x: hidden;
-  background-color: map-get($theme-colors, light);
+  background-color: map-get($theme-colors, dark);
 }
 
 .topnav-text {

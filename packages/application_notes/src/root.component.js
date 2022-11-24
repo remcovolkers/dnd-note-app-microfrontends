@@ -1,7 +1,20 @@
 import Container from "react-bootstrap/Container";
-import React from "react";
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
+import Card from "react-bootstrap/Card";
+import React, { useState } from "react";
 import "./styles/styles.scss";
+import MarkdownEditor from "./components/markdown-editor";
+import MarkdownPreview from "./components/markdown-preview";
 
 export default function Root(props) {
-  return <Container className="100vh vw-100 bg-secondary">Hallo</Container>;
+  const [text, setText] = useState("");
+  return (
+    <Container className="vw-50">
+      <Row className="vh-50">
+        <MarkdownEditor setText={setText} />
+        <MarkdownPreview showText={text} />
+      </Row>
+    </Container>
+  );
 }
