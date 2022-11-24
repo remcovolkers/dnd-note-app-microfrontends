@@ -3,7 +3,6 @@ import Card from "react-bootstrap/Card";
 import ReactMarkdown from "react-markdown";
 
 export default function MarkdownPreview({ showText }) {
-  console.log(showText);
   return (
     <Col className="">
       <Card className="vh-100">

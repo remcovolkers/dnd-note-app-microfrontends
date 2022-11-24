@@ -13,6 +13,4 @@ export default class MarkdownFile {
       owner: this.owner,
     });
   }
-
-  toHtml() {}
 }

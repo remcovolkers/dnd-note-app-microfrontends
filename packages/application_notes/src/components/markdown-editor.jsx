@@ -11,12 +11,7 @@ export default function MarkdownEditor({ setText }) {
         <Card.Header className="w-100 text-center fs-2 shadow-lg">
           Markdown editor
         </Card.Header>
-        <Form
-          onChange={(e) => {
-            setText(e.target.value);
-          }}
-          className="h-100"
-        >
+        <Form className="h-100" onChange={(e) => setText(e.target.value)}>
           <Form.Control
             as="textarea"
             className="h-100 bg-primary text-light rounded-0 rounded-bottom"
