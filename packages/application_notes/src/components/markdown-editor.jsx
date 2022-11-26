@@ -7,7 +7,7 @@ import Form from "react-bootstrap/Form";
 export default function MarkdownEditor({ setText }) {
   return (
     <Col>
-      <Card className="vh-100">
+      <Card style={{ height: "90vh" }}>
         <Card.Header className="w-100 text-center fs-2 shadow-lg">
           Markdown editor
         </Card.Header>

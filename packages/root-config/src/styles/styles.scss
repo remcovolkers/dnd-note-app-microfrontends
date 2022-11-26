@@ -1,0 +1,22 @@
+.grid-container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 8fr;
+  grid-template-rows: 5% 95%;
+  grid-gap: 0.5rem;
+}
+
+.grid-item-1 {
+  grid-column: 1/-1;
+  background-color: aqua;
+}
+
+.grid-item-2 {
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.grid-item-3 {
+  grid-row-start: 2;
+  grid-row-end: 3;
+}

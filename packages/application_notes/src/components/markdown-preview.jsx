@@ -4,8 +4,8 @@ import ReactMarkdown from "react-markdown";
 
 export default function MarkdownPreview({ showText }) {
   return (
-    <Col className="">
-      <Card className="vh-100">
+    <Col>
+      <Card style={{ height: "90vh" }}>
         <Card.Header className="w-100 text-center fs-2 shadow-lg">
           Markdown viewer
         </Card.Header>
