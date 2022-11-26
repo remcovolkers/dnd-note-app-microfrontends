@@ -1,7 +1,19 @@
 <single-spa-router>
   <main>
     <route default>
-      <application name="@remed/notes"></application>
+      <div class="grid-container">
+        <div class="grid-item grid-item-3">
+          <application name="@remed/topbar"></application>
+        </div>
+        <div class="grid-item grid-item-1">
+          <application name="@remed/notebook"></application>
+        </div>
+        <div class="grid-item grid-item-2">
+          <route path="/editor">
+            <application name="@remed/notes"></application>
+          </route>
+        </div>
+      </div>
     </route>
   </main>
 </single-spa-router>

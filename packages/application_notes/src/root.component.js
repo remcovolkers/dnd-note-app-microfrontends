@@ -10,11 +10,9 @@ import MarkdownPreview from "./components/markdown-preview";
 export default function Root(props) {
   const [text, setText] = useState("");
   return (
-    <Container className="vw-50">
-      <Row className="vh-50">
-        <MarkdownEditor setText={setText} />
-        <MarkdownPreview showText={text} />
-      </Row>
-    </Container>
+    <Row className="vh-50">
+      <MarkdownEditor setText={setText} />
+      <MarkdownPreview showText={text} />
+    </Row>
   );
 }

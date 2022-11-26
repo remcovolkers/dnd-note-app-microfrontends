@@ -1,8 +1,8 @@
 {
-  "name": "@remed/notebook",
-  "version": "0.0.1",
+  "name": "@remed/topbar",
+  "verion": "0.0.1",
   "scripts": {
-    "start": "webpack serve --port 9020",
+    "start": "webpack serve --port 9030",
     "start:standalone": "webpack serve --env standalone",
     "build": "concurrently yarn:build:*",
     "build:webpack": "webpack --mode=production",
